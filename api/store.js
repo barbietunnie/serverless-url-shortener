@@ -96,7 +96,7 @@ function buildRedirect (path, longUrl = false) {
 }
 
 function buildRedirectUrl (path) {
-  let baseUrl = `https://${config.BUCKET}.s3.${config.REGION}.amazonaws.com/`
+  let baseUrl = `http://${config.BUCKET}.s3-website-${config.REGION}.amazonaws.com/`
   
   if ('BASE_URL' in config && config['BASE_URL'] !== '') {
     baseUrl = config['BASE_URL']
